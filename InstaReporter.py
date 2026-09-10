@@ -53,7 +53,7 @@ def video_attack(proxies):
             p = Process(target=video_attack_process, args=(video_url, [],))  
             p.start()  
             print_status(str(k + 1) + ". Transaction Opened!")  
-            if (i == 5): print()  
+            if (k == 4): print()  
         return  
   
     chunk = list(chunks(proxies, 10))  
